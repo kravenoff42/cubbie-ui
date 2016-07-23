@@ -1,0 +1,25 @@
+header {
+  border-bottom: 4px solid darkgreen;
+  background-color: rosybrown;
+  top: 50px;
+}
+
+header ul li {
+  border: 2px solid green;
+  padding: 5px;
+  display: inline;
+  margin: 0 38% 0 0;
+}
+
+#gallery-container li {
+  display: inline-block;
+  height: 300px;
+  width: 33%;
+  border: 1px solid black;
+}
+
+/* need this to inherit the height and weidth of the parent li */
+#gallery-container li img {
+  display: block;
+  position: relative;
+}
