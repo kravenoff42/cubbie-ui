@@ -20,8 +20,8 @@ class Header extends React.Component {
     return (
       <header>
         <ul>
-          <li id="logo"><a href='#'>cubbie.</a></li>
-          <li id="section"><a href='#'>{ this.state.section }</a></li>
+          <li id="logo"><a href={window.location.origin}>cubbie.</a></li>
+          <li id="section">{ this.state.section }</li>
           <li id="menu"><a href='#'>Menu</a></li>
         </ul>
       </header>
