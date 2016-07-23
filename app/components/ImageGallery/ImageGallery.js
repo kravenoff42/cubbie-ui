@@ -2,6 +2,8 @@
 
 const React = require('react');
 
+const Image = require('./Image')
+
 class ImageGallery extends React.Component {
   constructor(props) {
     super(props);
@@ -9,16 +11,15 @@ class ImageGallery extends React.Component {
   }
 
   render() {
-    let photos = this.props.items.map((photo) => {
-      return <li><img src={photo.url}></img></li>
+    let foodItems = this.props.items.map(item => {
+      return <Image item={ item } />
     });
 
-    console.log(photos);
     return (
       <div id="gallery-container">
-          <ul>
-            {photos}
-          </ul>
+        <ul>
+          { foodItems }
+        </ul>
       </div>
     )
   }

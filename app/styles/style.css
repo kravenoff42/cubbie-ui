@@ -14,12 +14,13 @@ header ul li {
 #gallery-container li {
   display: inline-block;
   height: 300px;
-  width: 33%;
+  width: 30%;
   border: 1px solid black;
 }
 
 /* need this to inherit the height and weidth of the parent li */
 #gallery-container li img {
   display: block;
-  position: relative;
+  height: 300px;
+
 }
