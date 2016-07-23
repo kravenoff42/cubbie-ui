@@ -19,7 +19,7 @@ header ul li {
 }
 
 /* need this to inherit the height and weidth of the parent li */
-#gallery-container li img {
+#gallery-container li > img {
   display: block;
   height: 300px;
 
