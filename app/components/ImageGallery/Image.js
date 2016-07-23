@@ -10,7 +10,8 @@ class Image extends React.Component {
   
   }
 
-  // anchor tag inside each li is going to pull a 
+  // the anchor tag will change the display of an overarching div from
+  // display: none to display: block
   render() {
     return (
       <li>
