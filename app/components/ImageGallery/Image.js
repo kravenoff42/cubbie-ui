@@ -25,7 +25,7 @@ class Image extends React.Component {
     return (
       <li className="foodItem">
         <a href='#' onClick={ this.expandInfo }><img src={plusSign}></img></a>
-        <img src={ this.props.item.url } ></img>
+        <img src={ this.props.item.image } ></img>
         { this.state.showOverlay ? <ItemInfo item={ this.props.item } /> : null } 
       </li>
     )
