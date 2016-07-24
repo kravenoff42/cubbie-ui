@@ -49,16 +49,29 @@ header img {
 
 /* GALLERY */
 
-#gallery-container li {
+#gallery-container .foodItem {
   display: inline-block;
   height: 300px;
   width: 30%;
   border: 1px solid black;
+  position: relative;
+  z-index: 0;
 }
 
 /* need this to inherit the height and weidth of the parent li */
-#gallery-container li > img {
+.foodItem > img {
   display: block;
   height: 300px;
 
+}
+
+/* ITEM DISPLAY */
+
+.item-overlay {
+  position: absolute;
+
+  display: block;
+  height: 500px;
+  width: 500px;
+  background-color: #F1F1D4;
 }

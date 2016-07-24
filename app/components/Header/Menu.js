@@ -28,7 +28,7 @@ class Menu extends React.Component {
 }
 
 function openMenu() {
-  document.getElementById('menu').classList.toggle("show");
+  document.getElementById('menu-content').classList.toggle("show");
 }
 
 module.exports = Menu;

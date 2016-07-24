@@ -7,22 +7,25 @@ const Header = require('./Header/Header');
 const ImageGallery = require('./ImageGallery/ImageGallery');
 
 let items = [
-  { url: 'http://thesandwichguide.com/wp-content/uploads/sandwich.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://thesandwichguide.com/wp-content/uploads/sandwich.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
-  { url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Sandwich', url: 'http://thesandwichguide.com/wp-content/uploads/sandwich.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Banana', url: 'http://thesandwichguide.com/wp-content/uploads/sandwich.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Taco', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
+  { name: 'Turkey Sandwich', url: 'http://animalwelfareapproved.org/wp-content/uploads/2011/01/Taco-iStock.jpg'},
 ];
 
 class App extends React.Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      displayItem: false
+    }
   }
 
   render() {

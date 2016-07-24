@@ -2,25 +2,37 @@
 
 const React = require('react');
 
-const plusRender = require('../../assets/images/plus.png');
+const ItemInfo = require('./ItemInfo');
+const plusSign = require('../../assets/images/plus.png');
 
 class Image extends React.Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      showOverlay: false
+    }
   
+    this.expandInfo = this.expandInfo.bind(this);
+  }
+  
+  expandInfo(event) {
+    event.preventDefault();
+    this.state.showOverlay === false ? this.setState({showOverlay: true})  : this.setState({showOverlay: false});
   }
 
-  // the anchor tag will change the display of an overarching div from
-  // display: none to display: block
   render() {
     return (
-      <li>
-        <a href='#'><img src={plusRender}></img></a>
+      <li className="foodItem">
+        <a href='#' onClick={ this.expandInfo }><img src={plusSign}></img></a>
         <img src={ this.props.item.url } ></img>
+        { this.state.showOverlay ? <ItemInfo item={ this.props.item } /> : null } 
       </li>
     )
   }
 
 }
+
+
 
 module.exports = Image;
