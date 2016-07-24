@@ -11,6 +11,18 @@ header ul li {
   margin: 0 38% 0 0;
 }
 
+header ul #logo {
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+header img {
+  margin-top: 10px;
+  width: 75px;
+  height: 75px;
+}
+
 #gallery-container li {
   display: inline-block;
   height: 300px;

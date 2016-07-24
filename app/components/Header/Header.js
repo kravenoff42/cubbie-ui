@@ -2,6 +2,8 @@
 
 const React = require('react');
 
+const cubbieLogo = require('../../assets/images/mini-logo.jpg');
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -20,7 +22,7 @@ class Header extends React.Component {
     return (
       <header>
         <ul>
-          <li id="logo"><a href={window.location.origin}>cubbie.</a></li>
+          <li id="logo"><a href={window.location.origin}><img src={cubbieLogo}></img></a></li>
           <li id="section">{ this.state.section }</li>
           <li id="menu"><a href='#'>Menu</a></li>
         </ul>
