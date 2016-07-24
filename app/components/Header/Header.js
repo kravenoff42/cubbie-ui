@@ -2,6 +2,7 @@
 
 const React = require('react');
 
+const Menu = require('./menu');
 const cubbieLogo = require('../../assets/images/mini-logo.jpg');
 
 class Header extends React.Component {
@@ -24,7 +25,7 @@ class Header extends React.Component {
         <ul>
           <li id="logo"><a href={window.location.origin}><img src={cubbieLogo}></img></a></li>
           <li id="section">{ this.state.section }</li>
-          <li id="menu"><a href='#'>Menu</a></li>
+          <li id="menu"><Menu /></li>
         </ul>
       </header>
     )

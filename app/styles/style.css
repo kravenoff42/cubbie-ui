@@ -23,6 +23,32 @@ header img {
   height: 75px;
 }
 
+/* Header Menu */
+.user-menu {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.user-menu button {
+  height: 50px;
+  width: 50px;
+  background-color: sandybrown;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#menu-content {
+  display: none;
+}
+
+/* GALLERY */
+
 #gallery-container li {
   display: inline-block;
   height: 300px;
