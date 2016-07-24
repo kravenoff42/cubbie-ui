@@ -62,16 +62,20 @@ header img {
 .foodItem > img {
   display: block;
   height: 300px;
+  z-index: 0;
 
 }
 
 /* ITEM DISPLAY */
 
 .item-overlay {
-  position: absolute;
+  position: fixed;
+  top: 20%;
+  left: 15%;
 
+  z-index: 20;
   display: block;
   height: 500px;
-  width: 500px;
+  width: 700px;
   background-color: #F1F1D4;
 }
